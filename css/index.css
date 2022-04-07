@@ -1,0 +1,360 @@
+@import "./buttons/buttons.css";
+@import "./card/cards.css";
+@import "./header/header.css";
+@import "./header/navbar.css";
+
+body{
+    background-color: black;
+    color:whitesmoke;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(194, 213, 219);
+}
+
+p{
+    color: rgb(227, 233, 220);
+}
+
+a{
+    color: rgb(208, 219, 194);
+}
+
+.main-content{
+    margin-top: 4px;
+}
+
+@media (min-width: 768px){
+    .main-content{
+        background-image: url(../images/flame.png);
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    h2{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-content{
+        background-image: url(../images/flame.png);
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    
+
+    h1{
+        font-size: 16px;
+        text-align: center;
+    }
+    h2{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-content{
+        background-image: url(../images/flame.png);
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1{
+        font-size: 18px;
+        text-align: center;
+    }
+    h2{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.inner-grid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:1px;
+}
+
+@media (max-width: 767px) {
+    .inner-grid{
+        display:grid;
+        grid-template-columns: auto auto;
+        grid-gap:1px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inner-grid{
+        display:grid;
+        grid-template-columns: auto;
+        grid-gap:1px;
+        column-gap: 1px;
+    }
+
+    figure{
+        margin: 3px;
+    }
+}
+
+header{
+    background-color: black;
+}
+
+.header-box{
+    background-color: black;
+    margin-top: 0%;
+    width:100%;
+    height: 100%;
+    position: sticky;
+    z-index: 5;
+    padding: 10px;
+}
+
+.top-logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+}
+
+.header-name{
+    float: left;
+    color: rgb(204, 197, 197);
+    padding: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pfp-image{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+
+.pfp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 480px){
+    .top-logo{
+        height: 30px;
+        width: 30px;
+        border-radius: 10%;
+    }
+    .header-name{
+        float: left;
+        color: rgb(204, 197, 197);
+        padding: 3px;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .pfp-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pfp-image{
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+    }
+
+    .discord-icon{
+        color: #7289da;
+        padding: 5px;
+        transition: all .2s ease-in-out;
+    }
+    
+    .discord-icon:hover{
+        color: #4662c5;
+        transform: scale(1.1);
+    }
+
+    .twitter-icon{
+        color: #1DA1F2;
+        padding: 5px;
+        transition: all .2s ease-in-out;
+    }
+    
+    .twitter-icon:hover{
+        color: #0f78b9;
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 767px) {
+    .top-logo{
+        height: 50px;
+        width: 50px;
+        border-radius: 10%;
+    }
+    .header-name{
+        float: left;
+        color: rgb(204, 197, 197);
+        padding: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .pfp-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pfp-image{
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+
+li a{
+    padding: 5px;
+    margin: 5px;
+    vertical-align: baseline;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+li a:hover{
+    font-size: 16px;
+    transform: font-size;
+    color: rgb(230, 236, 222);
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twitter-icon{
+    color: #1DA1F2;
+    padding: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.twitter-icon:hover{
+    color: #0f78b9;
+    transform: scale(1.1);
+}
+
+.discord-icon{
+    color: #7289da;
+    padding: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.discord-icon:hover{
+    color: #4662c5;
+    transform: scale(1.1);
+}
+
+
+main{
+    clear: both;
+}
+
+
+
+figcaption{
+    color: whitesmoke;
+}
+
+footer{
+    clear: both;
+}
+
+.footer-content{
+    padding: 12px;
+    margin:4px;
+}
+
+.footer-media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    position: fixed;
+    background-color: whitesmoke;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s;
+}
+.modal-content:target{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+} 
+
+
+.modal-close{
+    color: rgb(80, 76, 76);
+    font-weight: bold;
+    line-height: 50px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width:50px;
+    text-decoration: none;
+}
+
+.modal-close:hover{
+    color: black;    
+}
+
+.modal-info{
+    color: black;
+    padding: 3em;
+}

@@ -1,0 +1,47 @@
+
+.btn-connect{
+    padding: 10px;
+    background-color: rgb(14, 104, 146);
+    color: rgb(208, 219, 194);;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+.btn-connect:hover{
+    padding: 10px;
+    background-color: rgb(13, 95, 133);
+    box-shadow: 1px 1px 4px 1px rgb(14, 104, 146);
+    cursor: pointer;
+    font-size: 16px;
+    transform: scale(1.1);
+}
+
+
+a{
+    display: flex;
+    text-decoration: none;
+    justify-content: baseline;
+    text-align: center;
+}
+
+.collection{
+    padding: 10px;
+    background-color: rgb(14, 104, 146);
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.collection:hover{
+    padding: 10px;
+    background-color: rgb(13, 95, 133);
+    box-shadow: 1px 1px 4px 1px rgb(14, 104, 146);
+    cursor: pointer;
+    font-size: 12px;
+    transform: scale(1.1);
+}

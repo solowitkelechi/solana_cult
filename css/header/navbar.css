@@ -1,0 +1,64 @@
+.topnav{
+    padding: 2px;
+    margin-right: 2px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav .top-li li{
+    float: right;
+    display: inline;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .top-li .icon{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .topnav .top-li li:not(:first-child){
+        display: none;
+    }
+
+    .topnav .top-li li .icon{
+        float: right;
+        display: block;
+        color: whitesmoke;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive{
+        position: relative;
+    }
+    .topnav.responsive .top-li .icon{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        padding: 10px;
+        color: white;
+        float: none;
+    }
+    .topnav.responsive .top-li li{
+        clear: both;
+        display: block;
+        float: left;
+        text-align: left;
+    }
+}
+
+
+
+
+
